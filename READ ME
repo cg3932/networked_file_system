@@ -1,0 +1,17 @@
+Christian Gallai - 260218797
+ECSE 427 - PA3
+November 28, 2009
+
+TO RUN:
+
+Step 1: Open 3 seperate terminals
+Step 2: In terminal 1 enter: gcc -g -0 nfs_server nfs_server.c sfs_api.c disk_emu.c
+Step 3: In terminal 2 enter: ./nfs_server -p 8011 -f disk.dsk
+Step 4: In terminal 3 enter: gcc -g -o nfs_test nfs_test.c nfs_client.c
+Step 5: In terminal 1 enter: ./nfs_server
+Step 6: Verify that in both terminal 1 and 2 the string "waiting for connection" has been printed
+Step 7: In terminal 3 enter: ./nfs_test
+
+Notes:
+
+To run the entire test program takes some time, please be patient, I have already confirmed through my own testing that my nfs_client.c and nfs_server.c programs are able to run the test program with 0 errors, please verify this. Thank you.
